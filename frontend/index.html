@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COGNITARA | Adaptive Learning AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>COGNITARA</h1>
+        <p>Adaptive Learning Intervention System Using AI</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Discover Your Learning Needs</h2>
+            <p>Take a short Python recursion quiz to identify
+               where you need more practice.</p>
+
+            <form id="quizForm">
+                <label for="studentName">Your name</label>
+                <input type="text" id="studentName"
+                       placeholder="Enter your name" required>
+
+                <label for="q1">1. What is recursion?</label>
+                <select id="q1" required>
+                    <option value="">Select an answer</option>
+                    <option value="a">A function calling itself</option>
+                    <option value="b">A loop that never ends</option>
+                    <option value="c">A type of variable</option>
+                </select>
+
+                <label for="q2">2. What is a base case?</label>
+                <select id="q2" required>
+                    <option value="">Select an answer</option>
+                    <option value="a">A function name</option>
+                    <option value="b">A condition that stops recursion</option>
+                    <option value="c">A programming language</option>
+                </select>
+
+                <label for="q3">3. What happens without a base case?</label>
+                <select id="q3" required>
+                    <option value="">Select an answer</option>
+                    <option value="a">The function always works</option>
+                    <option value="b">The code becomes shorter</option>
+                    <option value="c">Recursion may continue until an error</option>
+                </select>
+
+                <label for="q4">4. Which statement is correct?</label>
+                <select id="q4" required>
+                    <option value="">Select an answer</option>
+                    <option value="a">Every recursive function needs an ending condition</option>
+                    <option value="b">Recursion cannot call a function</option>
+                    <option value="c">Recursion only works with strings</option>
+                </select>
+
+                <label for="q5">5. What does factorial(1) commonly return?</label>
+                <select id="q5" required>
+                    <option value="">Select an answer</option>
+                    <option value="a">0</option>
+                    <option value="b">1</option>
+                    <option value="c">2</option>
+                </select>
+
+                <button type="submit">Analyze My Learning</button>
+            </form>
+        </section>
+
+        <section id="result" class="card" hidden>
+            <h2>Your Learning Report</h2>
+            <p id="score"></p>
+            <h3>Recommended Intervention</h3>
+            <p id="recommendation"></p>
+            <button id="retryButton" type="button">Try Again</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>COGNITARA | Student PBL Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
